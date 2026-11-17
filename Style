@@ -16,6 +16,9 @@
     border-radius: 2px;
     box-shadow: y 4px blur(12px) alpha(0.12);
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
 }
 
 
@@ -25,7 +28,14 @@
     color: #191cce;
 }
 
+.btn:focus-visible {
+    outline: 3px solid hsl(221, 49%, 27%);
+    outline-offset: 2px;
+}
 
+.btn:hover {
+    transform: translateY(-2px);
+}
 
 .btn {
     background-color: rgb(69, 102, 209);
@@ -34,7 +44,14 @@
     border: 2px solid #191a6d;
     border-radius: 999px;
     letter-spacing: 0.09rem;
-    display: none;
+    opacity: 1;
+    display: block;
+    margin: 0 auto;
+    gap: 1rem;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 180ms ease-out, background-color 180ms ease-out;
+    
 }
 
 .btn-primary {
