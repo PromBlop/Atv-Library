@@ -6,17 +6,13 @@
         --color-surface:var(hsl(225, 38%, 20%));
         --color-ink:var(hsla(225, 71%, 18%, 0.781));
         --color-heading:var(hsl(251, 65%, 26%));
-        --color-muted:var(hsl(268, 79%, 63%));
-        --color-line:var(hsl(251, 67%, 53%));
         --color-brand:var(hsl(225, 80%, 56%));
-        --color-on-brand:var(hsl(225, 60%, 22%));
         --color-accent:var(hsl(225, 75%, 60%));
-        --color-ring:var(hsl(225, 64%, 41%));
     }
 }
 
 @media (min-width: 60rem) {
-    .btn:hover {flex-direction: row; justify-content: space-between;}
+    .btn {flex-direction: row; justify-content: space-between;}
 }
 
 .body {
